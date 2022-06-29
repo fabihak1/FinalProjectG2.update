@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tml-kw-qDw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -7,6 +7,11 @@
         <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Louis George Cafe.ttf">
+            <string>LouisGeorgeCafe</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -26,22 +31,30 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clinck" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlQ-lL-L1n">
                                 <rect key="frame" x="169" y="131" width="78" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <fontDescription key="fontDescription" name="LouisGeorgeCafe" family="Louis George Cafe" pointSize="0.0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CLINCK" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83i-OX-Meg">
+                                <rect key="frame" x="150" y="106" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LouisGeorgeCafe" family="Louis George Cafe" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEV-OE-Wm3">
-                                <rect key="frame" x="177" y="587" width="164" height="161"/>
+                                <rect key="frame" x="103" y="439" width="164" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <menu key="menu" id="D5M-3x-Tf2">
                                     <children>
-                                        <command title="Item 1" id="UX8-1R-bIU"/>
-                                        <command title="Item 2" id="W2f-Fa-nId"/>
+                                        <command title="Credit cards" id="UX8-1R-bIU"/>
+                                        <command title="Investing" id="W2f-Fa-nId"/>
+                                        <command title="Scholarships" id="xkR-k1-e9T"/>
                                     </children>
                                 </menu>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
+                                    <action selector="ButtonTappedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E9J-hu-09J"/>
                                     <segue destination="gbe-uf-XtN" kind="show" id="SuL-S2-9U8"/>
                                 </connections>
                             </button>
@@ -49,17 +62,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zVK-fP-GN5"/>
+                    <connections>
+                        <outlet property="Button" destination="D5M-3x-Tf2" id="3ih-Vq-y90"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="70"/>
+            <point key="canvasLocation" x="973.91304347826099" y="69.642857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="IEc-Df-4PH">
             <objects>
                 <viewController id="gbe-uf-XtN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RRS-RL-X8P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credit cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P6-ki-1bM">
@@ -123,19 +140,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="2qG-XB-DIC"/>
                     <connections>
-                        <segue destination="ipu-ar-DtC" kind="show" id="wV5-WO-2AK"/>
+                        <segue destination="ipu-ar-DtC" kind="show" identifier="Segue 1" id="wV5-WO-2AK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9k-T0-xyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="70"/>
+            <point key="canvasLocation" x="1731.8840579710147" y="69.642857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3zB-Pp-kmg">
             <objects>
                 <viewController id="ipu-ar-DtC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kWc-qT-vu6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Investing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs7-U0-I9N">
@@ -164,19 +181,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="2H8-lL-oa9"/>
                     <connections>
-                        <segue destination="LyT-dn-bQe" kind="show" id="z56-Z6-Acf"/>
+                        <segue destination="LyT-dn-bQe" kind="show" identifier="Segue 2" id="z56-Z6-Acf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VN9-xS-4cE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="70"/>
+            <point key="canvasLocation" x="2526.0869565217395" y="69.642857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mAw-et-Wc9">
             <objects>
                 <viewController id="LyT-dn-bQe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mbQ-5D-TNi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scholarships" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLM-ra-Xmj">
@@ -207,7 +224,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdT-rO-OEw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2375" y="70"/>
+            <point key="canvasLocation" x="3284.057971014493" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DsY-ia-D0S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tml-kw-qDw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vjz-9T-3Sy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ifj-f6-lMX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf8-DL-tmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="69.642857142857139"/>
         </scene>
     </scenes>
 </document>
