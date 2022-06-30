@@ -22,6 +22,7 @@
 		791A7C9873CB9061A16D4137 /* Pods_FinalProjectG2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6120DC92526E3955D558F6 /* Pods_FinalProjectG2Tests.framework */; };
 		A1096BC7286CD01500FAC26B /* louis_george_caf in Resources */ = {isa = PBXBuildFile; fileRef = A1096BC6286CD01500FAC26B /* louis_george_caf */; };
 		A1096BCA286CD9D100FAC26B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A1096BC9286CD9D100FAC26B /* Algorithms */; };
+		E86026C3286DFFD300C0C951 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86026C2286DFFD300C0C951 /* DropDownMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		CF0712E4913A68A11EA4F80A /* Pods-FinalProjectG2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2Tests.release.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2Tests/Pods-FinalProjectG2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CFBE17571604776809FDD86F /* Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2-FinalProjectG2UITests/Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D29786D00CD1FF6DE5E07C88 /* Pods-FinalProjectG2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2Tests.debug.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2Tests/Pods-FinalProjectG2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E86026C2286DFFD300C0C951 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				5EE9FA5B286B902700E63DDA /* SceneDelegate.swift */,
 				5EE9FA5D286B902700E63DDA /* ViewController.swift */,
 				5EE9FA5F286B902700E63DDA /* Main.storyboard */,
+				E86026C2286DFFD300C0C951 /* DropDownMenu.swift */,
 				5EE9FA65286B902900E63DDA /* Assets.xcassets */,
 				5EE9FA67286B902900E63DDA /* LaunchScreen.storyboard */,
 				5EE9FA6A286B902900E63DDA /* Info.plist */,
@@ -172,7 +175,6 @@
 				D29786D00CD1FF6DE5E07C88 /* Pods-FinalProjectG2Tests.debug.xcconfig */,
 				CF0712E4913A68A11EA4F80A /* Pods-FinalProjectG2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -271,7 +273,7 @@
 			);
 			mainGroup = 5EE9FA4D286B902700E63DDA;
 			packageReferences = (
-				A1096BC8286CD9D100FAC26B /* XCRemoteSwiftPackageReference "swift-algorithms.git" */,
+				A1096BC8286CD9D100FAC26B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 5EE9FA57286B902700E63DDA /* Products */;
 			projectDirPath = "";
@@ -388,6 +390,7 @@
 			files = (
 				5EE9FA5E286B902700E63DDA /* ViewController.swift in Sources */,
 				5EE9FA64286B902700E63DDA /* FinalProjectG2.xcdatamodeld in Sources */,
+				E86026C3286DFFD300C0C951 /* DropDownMenu.swift in Sources */,
 				5EE9FA5A286B902700E63DDA /* AppDelegate.swift in Sources */,
 				5EE9FA5C286B902700E63DDA /* SceneDelegate.swift in Sources */,
 			);
@@ -733,7 +736,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A1096BC8286CD9D100FAC26B /* XCRemoteSwiftPackageReference "swift-algorithms.git" */ = {
+		A1096BC8286CD9D100FAC26B /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-algorithms.git";
 			requirement = {
@@ -746,7 +749,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		A1096BC9286CD9D100FAC26B /* Algorithms */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A1096BC8286CD9D100FAC26B /* XCRemoteSwiftPackageReference "swift-algorithms.git" */;
+			package = A1096BC8286CD9D100FAC26B /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
 		};
 /* End XCSwiftPackageProductDependency section */
