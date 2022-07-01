@@ -46,6 +46,13 @@ class DropDownMenu: UIViewController, UITableViewDelegate, UITableViewDataSource
         filterArray(searchText: dropDownMenu.text!)
         menuNameArray = menuNamesSearchArray
         Options.reloadData()
+        
+        if menuNameArray.count > 0 {
+            if menuNameArray[0] == "Credit Cards"{
+                CreditCardOutlet.isHidden = false
+            }
+        }
+        
    
     }
     
@@ -63,7 +70,7 @@ class DropDownMenu: UIViewController, UITableViewDelegate, UITableViewDataSource
         Options.delegate = self
         Options.dataSource = self
         Options.isHidden = true
-      
+        CreditCardOutlet.isHidden = true
     }
     
     @IBOutlet weak var Options: UITableView!
@@ -71,5 +78,15 @@ class DropDownMenu: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     @IBOutlet weak var dropDownMenu: UITextField!
     //^genretableview
+    
+    
+//    @IBAction func CreditCardButton(_ sender: UIButton) {
+//    }
+    
+    
+    
+    
+    @IBOutlet weak var CreditCardOutlet: UIButton!
+    
     
 }

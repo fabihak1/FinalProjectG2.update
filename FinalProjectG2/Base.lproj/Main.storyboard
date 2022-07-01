@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tml-kw-qDw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,30 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEV-OE-Wm3">
-                                <rect key="frame" x="119" y="744" width="177" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <menu key="menu" id="D5M-3x-Tf2">
-                                    <children>
-                                        <command title="Credit cards" id="UX8-1R-bIU"/>
-                                        <command title="Investing" id="W2f-Fa-nId"/>
-                                        <command title="Scholarships" id="xkR-k1-e9T"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" red="1" green="0.3472628431" blue="0.49016065619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" systemColor="systemBrownColor"/>
-                                </state>
-                                <buttonConfiguration key="configuration" style="tinted" title="Start" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
-                                    <color key="baseForegroundColor" red="0.87843137250000003" green="0.3411764706" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="gbe-uf-XtN" kind="show" id="Han-cn-4Bc"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step-by-step or clinck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa4-wF-j8W">
                                 <rect key="frame" x="182" y="115" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -59,7 +35,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="hi:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fgK-wk-lxd"/>
                                     <action selector="menuEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="sc4-M4-8iE"/>
                                     <action selector="menuEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="gvL-k9-dXx"/>
                                     <action selector="menuEditingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="N7D-a9-eRe"/>
@@ -93,12 +68,46 @@
                                 <color key="textColor" red="0.87843137250000003" green="0.3411764706" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiE-fx-dEI">
+                                <rect key="frame" x="327" y="740" width="67" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="gbe-uf-XtN" kind="show" id="zwK-VA-mDi"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEV-OE-Wm3">
+                                <rect key="frame" x="129" y="772" width="177" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <menu key="menu" id="D5M-3x-Tf2">
+                                    <children>
+                                        <command title="Credit cards" id="UX8-1R-bIU"/>
+                                        <command title="Investing" id="W2f-Fa-nId"/>
+                                        <command title="Scholarships" id="xkR-k1-e9T"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="0.3472628431" blue="0.49016065619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemBrownColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="tinted" title="Start" cornerStyle="large">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
+                                    <color key="baseForegroundColor" red="0.87843137250000003" green="0.3411764706" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gbe-uf-XtN" kind="show" id="9yB-vy-iOx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="zVK-fP-GN5"/>
                     <connections>
+                        <outlet property="CreditCardOutlet" destination="bEV-OE-Wm3" id="bEO-Yu-o7a"/>
                         <outlet property="Options" destination="VhI-Xp-4Rs" id="0eb-w0-gww"/>
                         <outlet property="dropDownMenu" destination="aYn-xQ-7Wd" id="b7y-jI-jXt"/>
                     </connections>
@@ -112,7 +121,7 @@
             <objects>
                 <viewController id="gbe-uf-XtN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RRS-RL-X8P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credit cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P6-ki-1bM">
@@ -204,9 +213,6 @@
                         <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="2qG-XB-DIC"/>
-                    <connections>
-                        <segue destination="ipu-ar-DtC" kind="show" identifier="Segue 1" id="wV5-WO-2AK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9k-T0-xyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,9 +329,6 @@
                         <color key="backgroundColor" red="1" green="0.87843137250000003" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="2H8-lL-oa9"/>
-                    <connections>
-                        <segue destination="LyT-dn-bQe" kind="show" identifier="Segue 2" id="z56-Z6-Acf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VN9-xS-4cE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -439,25 +442,10 @@ A field of interest
             </objects>
             <point key="canvasLocation" x="3284.057971014493" y="69.642857142857139"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="DsY-ia-D0S">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tml-kw-qDw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vjz-9T-3Sy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ifj-f6-lMX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf8-DL-tmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="63.768115942028992" y="69.642857142857139"/>
-        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9yB-vy-iOx"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Screenshot 2022-06-30 at 12.27.35 am" width="809" height="786"/>
         <systemColor name="systemBackgroundColor">
